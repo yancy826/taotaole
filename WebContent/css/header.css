@@ -1,0 +1,116 @@
+body{
+	font: 10px "arial, helvetica, sans-serif";
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-image: url("../img/background.gif");
+	background-repeat: no-repeat;
+	background-color: rgba(169, 215, 238, 0.35) !important;
+	background-color: aliceblue;
+	background-position: left top;
+	margin:0;    
+    height:100%; 
+}
+
+img{
+	border: 0px;
+}
+a:link{
+	color: #5d5d5d;
+	text-decoration: none;
+	font: sans-serif;
+}
+a:visited{
+	color: #4f181d;
+	text-decoration: none;
+	font: sans-serif;
+}
+/*滚动条*/
+
+html{
+	scrollbar-3dlight-color: #aa0000;
+	scrollbar-arrow-color: #ffffff;
+	scrollbar-base-color: #495472;
+	scrollbar-darkshadow-color: #1d4272;
+	scrollbar-face-color: #495472;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-shadow-color: #5380ba;
+	margin:0;    
+    height:100%; 
+}
+/*头部*/
+#header{
+	/*background-color: #FFFFFF;*/
+	height: 50px;
+	/*width: 950px;*/
+	text-align: left;
+	vertical-align: top;
+	margin-left: 0px auto;
+	border-bottom: 1px groove ;
+}
+.header_logo{
+	margin-top: 70px;
+	margin-left: 100px;
+	height: 100px;
+	width: 400px;
+	float:left;
+}
+.header_link{
+	height: 20px;
+	width: 500px;
+	float: right;
+	text-align: right;
+	vertical-align:bottom;
+	padding: 10px 20px 0px 0px;
+	font-size: 25px;
+}
+
+/*搜索栏*/
+#search{
+	position: absolute;
+	top: 120px; 
+	left: 700px;
+	height: 60px;
+	width: 760px;
+	border: 2px solid;
+	border-radius: 5px;
+	margin-bottom: 3px;
+	background-color: #FFFFFF;
+}
+.search_text{
+	float: left;
+	border: none;
+	height: 58px;
+	width: 700px;
+	font-size: 40px;
+	color: darkcyan;
+	margin-bottom: 10px;
+}
+.search_button{
+	float: left;
+	height: 58px;
+	width: 58px;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	border: none;
+}
+#hot span{
+	font-size: 30px;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 20px;
+	float: left;
+	color: gray;
+}
+
+#hot a{
+	font-size: 30px;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 20px;
+	float: left;
+	color: grey;
+	text-decoration: underline;
+}

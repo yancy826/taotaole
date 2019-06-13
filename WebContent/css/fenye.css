@@ -1,0 +1,29 @@
+.panel {
+    width: 1000px;
+    min-height: 50px;
+    overflow: hidden;
+    background-color: rgba(169, 215, 238, 0.30);
+    font-size: 30px;
+    
+}
+
+.panel li{
+	float: left;
+	margin: 0px;
+	margin-right: 30px;
+	list-style: none;
+}
+
+.panel a{
+	color: gray;
+	text-decoration: underline;
+}
+
+.panel_active a{
+	color: darkslateblue;
+}
+
+.panel_disable a{
+	color: darkgray;
+}
+
