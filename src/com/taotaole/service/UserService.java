@@ -7,8 +7,21 @@ import java.sql.ResultSet;
 
 import com.taotaole.db.DButil;
 import com.taotaole.model.User;
-
+/**
+ *
+ * 为User类提供增删改查方法
+ * @author 刘畅
+ * @version 2019/5/24
+ *
+ */
 public class UserService {
+	/**
+	 * 
+	 * @param username 输入用户名
+	 * @return User
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public User query(String username) throws Exception {
 		Connection conn = DButil.getConnection();
 		String sql = "select * from user where username = ?";
@@ -28,6 +41,12 @@ public class UserService {
 		}
 		return user;
 	}
+	/**
+	 * 
+	 * @param user 用户类
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public void addUser(User user) throws Exception {
 		Connection conn = DButil.getConnection();
 		String sql =""+
@@ -45,6 +64,12 @@ public class UserService {
 		ptmt.execute();
 	}
 	
+	/**
+	 * 
+	 * @param user 用户类
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public void updateUser(User user) throws Exception {
 		Connection conn = DButil.getConnection();
 		String sql =""+

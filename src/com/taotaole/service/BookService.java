@@ -14,7 +14,22 @@ import java.text.SimpleDateFormat;
 import com.taotaole.db.DButil;
 import com.taotaole.model.Book;
 
+
+/**
+ *
+ * 为Book类提供增删改查方法
+ * @author 刘畅
+ * @version 2019/5/24
+ *
+ */
 public class BookService {
+
+	/**
+	 *
+	 * @param book 书籍类
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public void addBook(Book book) throws Exception {
 		Connection conn = DButil.getConnection();
 		String sql =""+
@@ -40,6 +55,13 @@ public class BookService {
 		ptmt.setString(13, book.getOwnerName());
 		ptmt.execute();
 	}
+	/**
+	 *
+	 * @param content 书籍内容
+	 * @return book集合
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public List<Book> serchBook(String content) throws Exception{
 		System.out.println(content);
 		Connection conn = DButil.getConnection();
@@ -69,6 +91,13 @@ public class BookService {
 		}
 		return books;
 	}
+	/**
+	 *
+	 * @param id 书籍id
+	 * @return Book
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public Book serchBookById(int id) throws Exception{
 		
 		Connection conn = DButil.getConnection();
@@ -102,6 +131,12 @@ public class BookService {
 		}
 		return book;
 	}
+	/**
+	 *
+	 * @return 查询书籍集合
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public List<Book> query() throws Exception{
 		
 		Connection conn = DButil.getConnection();
@@ -126,6 +161,12 @@ public class BookService {
 		}
 		return books;
 	}
+	/**
+	 *
+	 * @param id 书籍id
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public void deleteBook(int id) throws Exception {
 		Connection conn = DButil.getConnection();
 		String sql = "delete from book where id = ?";

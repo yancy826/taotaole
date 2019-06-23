@@ -17,13 +17,18 @@ import com.taotaole.service.BookService;
 
 /**
  * Servlet implementation class LaunchBookServlet
+ * 类名LaunchBookServlet，是上传图书的类
+ * 类有的方法是LaunchBookServlet、doGet和doPost
+ * 长整型serialVersionUID，初始为1L
  */
 @WebServlet("/LaunchBookServlet")
 public class LaunchBookServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
+	/**
      * @see HttpServlet#HttpServlet()
+     * 方法名LaunchBookServlet
+     * super()调用父类中的某一个构造函数
      */
     public LaunchBookServlet() {
         super(); 

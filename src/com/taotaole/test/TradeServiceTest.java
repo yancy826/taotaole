@@ -15,6 +15,11 @@ import com.taotaole.model.Trade;
 import com.taotaole.service.TradeService;
 
 public class TradeServiceTest {
+	
+	/**
+	 * 方法名：testAddTrade
+	 * 测试添加交易功能
+	 */
 
 	@Test
 	public void testAddTrade() {
@@ -42,6 +47,12 @@ public class TradeServiceTest {
 		}
 	}
 
+	
+
+	/**
+	 * 方法名：testSerchTrade
+	 * 测试查询交易功能
+	 */
 	@Test
 	public void testSerchTrade() {
 		TradeService ts = new TradeService();
@@ -53,6 +64,10 @@ public class TradeServiceTest {
 		}
 	}
 
+	/**
+	 * 方法名：testDeleteTrade
+	 * 测试删除交易功能
+	 */
 	@Test
 	public void testDeleteTrade() {
 		TradeService ts = new TradeService();

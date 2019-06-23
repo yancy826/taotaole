@@ -11,6 +11,7 @@ import com.taotaole.service.CollectService;
 
 /**
  * Servlet implementation class RemoveCollectServlet
+ * 类名 RemoveCollectServlet
  */
 @WebServlet("/RemoveCollectServlet")
 public class RemoveCollectServlet extends HttpServlet {
@@ -18,6 +19,7 @@ public class RemoveCollectServlet extends HttpServlet {
        
     /**
      * @see HttpServlet#HttpServlet()
+     * 方法名RemoveCollectServlet，移出收藏列表
      */
     public RemoveCollectServlet() {
         super();

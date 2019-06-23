@@ -17,6 +17,11 @@ import com.taotaole.model.User;
 import com.taotaole.service.UserService;
 
 public class UserServiceTest {
+	
+	/**
+	 * 方法名：testQuery
+	 * 测试查询用户信息功能
+	 */
 
 	@Test
 	public void testQuery() {
@@ -29,6 +34,12 @@ public class UserServiceTest {
 		}
 	}
 
+	
+	/**
+	 * 方法名：testAddUser
+	 * 测试添加用户功能
+	 */
+	
 	@Test
 	public void testAddUser() {
 		UserService us = new UserService();
@@ -59,6 +70,11 @@ public class UserServiceTest {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * 方法名：testUpdateUser
+	 * 测试更新用户信息功能
+	 */
 
 	@Test
 	public void testUpdateUser() {

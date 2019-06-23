@@ -16,14 +16,12 @@ import com.taotaole.service.BookService;
 
 /**
  * Servlet implementation class SerchServlet
+ * ç±»åSerchServletï¼Œæœç´¢ç±»
  */
 @WebServlet("/SerchServlet")
 public class SerchServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /** 
-     * @see HttpServlet#HttpServlet()
-     */
     public SerchServlet() {
         super();
         // TODO Auto-generated constructor stub
@@ -61,10 +59,10 @@ public class SerchServlet extends HttpServlet {
 		request.getSession().setAttribute("books", books);
 //		if(books.size()!=0){
 //			for (Book book : books) {
-//				System.out.println(book.getId()+",ÊéÃû£º"+book.getBookName());
+//				System.out.println(book.getId()+",ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+book.getBookName());
 //			}
 //		}else {
-//			System.out.println("booksÎª¿Õ");
+//			System.out.println("booksÎªï¿½ï¿½");
 //		}
 		if(books.size()==0) {
 			response.sendRedirect("/ttl/a/failToSerch.jsp");

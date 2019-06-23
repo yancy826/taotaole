@@ -10,9 +10,20 @@ import java.util.List;
 
 import com.taotaole.db.DButil;
 import com.taotaole.model.Collect;
-
+/**
+ *
+ * 为Collect类提供增删改查方法
+ * @author 刘畅
+ * @version 2019/5/24
+ *
+ */
 public class CollectService {
-	
+	/**
+	 *
+	 * @param collect 收藏品
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public void addCollect(Collect collect) throws Exception {
 		Connection conn = DButil.getConnection();
 		String sql ="insert into collect"+ 
@@ -26,7 +37,14 @@ public class CollectService {
 		ptmt.setString(5, collect.getBookName());
 		ptmt.execute();
 	}
-	
+
+	/**
+	 *
+	 * @param buyerName 购买者姓名
+	 * @return 收藏品集合
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public List<Collect> serchCollect(String buyerName) throws Exception{
 		Connection conn = DButil.getConnection();
 		StringBuilder sb =new StringBuilder();
@@ -50,6 +68,12 @@ public class CollectService {
 		}
 		return collects;
 	}
+	/**
+	 *
+	 * @param id 收藏品id
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public void deleteCollect(int id) throws Exception {
 		Connection conn = DButil.getConnection();
 		String sql = "delete from collect where id = ?";

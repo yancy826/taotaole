@@ -18,6 +18,11 @@ import com.taotaole.service.UserService;
  * Servlet implementation class RegisterServlet
  */
 @WebServlet("/RegisterServlet")
+/**
+ * <P>ç±»åRegisterServletï¼Œæ³¨å†Œç±»<br>
+ * æ–¹æ³•æœ‰RegisterServletã€doGetå’ŒdoPost
+ * é•¿æ•´å‹serialVersionUIåˆå§‹åŒ–ä¸º 1L
+ */
 public class RegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -50,7 +55,7 @@ public class RegisterServlet extends HttpServlet {
 			e1.printStackTrace();
 		}
 		if(user.getUsername().length()!=0) {
-			request.getSession().setAttribute("warning2", "ÓÃ»§ÃûÒÑ´æÔÚÇëÖØĞÂ×¢²á");
+			request.getSession().setAttribute("warning2", "ï¿½Ã»ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½");
 			response.sendRedirect("register.jsp");
 		}else {
 			user.setUsername(request.getParameter("username"));

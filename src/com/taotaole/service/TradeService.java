@@ -11,8 +11,20 @@ import java.util.List;
 
 import com.taotaole.db.DButil;
 import com.taotaole.model.Trade;
-
+/**
+ *
+ * 为Trade类提供增删改查方法
+ * @author 刘畅
+ * @version 2019/5/24
+ *
+ */
 public class TradeService {
+	/**
+	 *
+	 * @param trade 商品
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public void addTrade(Trade trade) throws Exception {
 		Connection conn = DButil.getConnection();
 		String sql ="insert into trade"+ 
@@ -25,7 +37,13 @@ public class TradeService {
 		ptmt.setDouble(4, trade.getAmount());
 		ptmt.execute();
 	}
-	
+	/**
+	 *
+	 * @param buyerName 购买者用户名
+ 	 * @return 返回商人集合
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public List<Trade> serchTrade(String buyerName) throws Exception{
 		Connection conn = DButil.getConnection();
 		StringBuilder sb =new StringBuilder();
@@ -51,7 +69,12 @@ public class TradeService {
 		}
 		return trades;
 	}
-	
+	/**
+	 *
+	 * @param id 用户id
+	 * @author liuc144
+	 * @exception Exception 抛出异常
+	 */
 	public void deleteTrade(int id) throws Exception {
 		Connection conn = DButil.getConnection();
 		String sql = "delete from trade where id = ?";

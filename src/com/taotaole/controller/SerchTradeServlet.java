@@ -16,6 +16,7 @@ import com.taotaole.service.TradeService;
 
 /**
  * Servlet implementation class SerchTradeServlet
+ * 类名SerchTradeServlet，搜索交易类
  */
 @WebServlet("/SerchTradeServlet")
 public class SerchTradeServlet extends HttpServlet {
@@ -23,6 +24,7 @@ public class SerchTradeServlet extends HttpServlet {
        
     /**
      * @see HttpServlet#HttpServlet()
+     * 方法名SerchTradeServlet，搜索交易记录方法
      */
     public SerchTradeServlet() {
         super();

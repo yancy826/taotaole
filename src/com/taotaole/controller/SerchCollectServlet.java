@@ -17,6 +17,7 @@ import com.taotaole.service.CollectService;
 
 /**
  * Servlet implementation class SerchCollectServlet
+ * 类名 SerchCollectServlet，查询收藏类
  */
 @WebServlet("/SerchCollectServlet")
 public class SerchCollectServlet extends HttpServlet {
@@ -24,6 +25,7 @@ public class SerchCollectServlet extends HttpServlet {
        
     /**
      * @see HttpServlet#HttpServlet()
+     * 方法名SerchCollectServlet
      */
     public SerchCollectServlet() {
         super();

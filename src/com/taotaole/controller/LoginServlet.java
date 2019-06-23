@@ -14,11 +14,17 @@ import com.taotaole.service.UserService;
  * Servlet implementation class LoginServlet
  */
 @WebServlet("/LoginServlet")
+/**
+ * 类名LoginServlet，登录类
+ * 方法有LoginServlet、doGet和doPost
+ */
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
         
-    /**
+	/**
      * @see HttpServlet#HttpServlet()
+     * 方法名LoginServlet，登录方法
+     * super()调用父类中的某一个构造函数
      */
     public LoginServlet() {
         super();

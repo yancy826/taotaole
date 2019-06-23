@@ -15,6 +15,11 @@ import com.taotaole.model.Book;
 import com.taotaole.service.BookService;
 
 public class BookServiceTest {
+	
+	/**
+	 * 方法名：testAddBook
+	 * 测试添加书籍功能
+	 */
 
 	@Test
 	public void testAddBook() {
@@ -39,6 +44,11 @@ public class BookServiceTest {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * 方法名：testSerchBook
+	 * 测试查询书籍功能
+	 */
 
 	@Test
 	public void testSerchBook() {
@@ -51,7 +61,14 @@ public class BookServiceTest {
 			e.printStackTrace();
 		}		
 	}
+	
+	
 
+	/**
+	 *方法名：testSerchBookById
+	 *测试根据书籍的编号来搜索书籍功能
+	 */
+	
 	@Test
 	public void testSerchBookById() {
 		BookService bs = new BookService();
@@ -63,6 +80,11 @@ public class BookServiceTest {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * 方法名：testQuery
+	 * 测试查询数据功能
+	 */
 
 	@Test
 	public void testQuery() {
@@ -75,6 +97,10 @@ public class BookServiceTest {
 		}		
 	}
 
+	/**
+	 * 方法名：testDeleteBook
+	 * 测试删除书籍功能
+	 */
 	@Test
 	public void testDeleteBook() {
 		BookService bs = new BookService();

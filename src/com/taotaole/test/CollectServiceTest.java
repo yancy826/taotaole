@@ -14,6 +14,11 @@ import com.taotaole.model.Collect;
 import com.taotaole.service.CollectService;
 
 public class CollectServiceTest {
+	
+	/**
+	 * 方法名：testAddCollect
+	 * 测试添加收藏功能
+	 */
 
 	@Test
 	public void testAddCollect() {
@@ -41,6 +46,11 @@ public class CollectServiceTest {
 		}
 	}
 
+
+    /**
+     * 方法名：testSerchCollect
+     * 测试查询收藏功能
+     */
 	@Test
 	public void testSerchCollect() {
 		CollectService cs = new CollectService();
@@ -52,6 +62,11 @@ public class CollectServiceTest {
 			e.printStackTrace();
 		}		
 	}
+	
+	/**
+	 * 方法名：testDeleteCollect
+	 * 测试删除收藏功能
+	 */
 
 	@Test
 	public void testDeleteCollect() {

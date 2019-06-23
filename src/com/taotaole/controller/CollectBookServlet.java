@@ -15,6 +15,9 @@ import com.taotaole.service.CollectService;
 
 /**
  * Servlet implementation class CollectBookServlet
+ * 书的收藏列表的类<br>
+ * 方法有CollectBookServlet、doGet<br>
+ * serialVersionUID初始为1L，长整型
  */
 @WebServlet("/CollectBookServlet")
 public class CollectBookServlet extends HttpServlet {
@@ -22,6 +25,7 @@ public class CollectBookServlet extends HttpServlet {
        
     /** 
      * @see HttpServlet#HttpServlet()
+     * super()调用父类中的某一个构造函数
      */
     public CollectBookServlet() {
         super();

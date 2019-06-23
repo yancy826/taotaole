@@ -17,6 +17,9 @@ import com.taotaole.service.UserService;
 
 /**
  * Servlet implementation class ContactOfSellerServlet
+ * 类名ContactOfSellerServlet，是联系卖方的类
+ * 方法有ContactOfSellerServlet、doGet和doPost
+ * 返回值为空
  */
 @WebServlet("/ContactOfSellerServlet")
 public class ContactOfSellerServlet extends HttpServlet {
@@ -24,6 +27,7 @@ public class ContactOfSellerServlet extends HttpServlet {
        
     /**
      * @see HttpServlet#HttpServlet()
+     * super ()调用父类中的某一个构造函数
      */
     public ContactOfSellerServlet() {
         super();

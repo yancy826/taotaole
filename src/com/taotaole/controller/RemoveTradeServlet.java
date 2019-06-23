@@ -11,6 +11,7 @@ import com.taotaole.service.TradeService;
 
 /**
  * Servlet implementation class RemoveTradeServlet
+ * 类名RemoveTradeServlet，移出交易类
  */
 @WebServlet("/RemoveTradeServlet")
 public class RemoveTradeServlet extends HttpServlet {
@@ -18,6 +19,7 @@ public class RemoveTradeServlet extends HttpServlet {
        
     /**
      * @see HttpServlet#HttpServlet()
+     * 方法名RemoveTradeServlt
      */
     public RemoveTradeServlet() {
         super();

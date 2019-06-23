@@ -16,6 +16,7 @@ import com.taotaole.service.UserService;
 
 /**
  * Servlet implementation class UpdateUserInfoServlet
+ * 类名UpdateUserInfoServlet，更新用户信息类
  */
 @WebServlet("/UpdateUserInfoServlet")
 public class UpdateUserInfoServlet extends HttpServlet {
@@ -23,6 +24,7 @@ public class UpdateUserInfoServlet extends HttpServlet {
        
     /**
      * @see HttpServlet#HttpServlet()
+     *方法名UpdateUserInfoServlet，更新用户信息方法
      */
     public UpdateUserInfoServlet() {
         super();
